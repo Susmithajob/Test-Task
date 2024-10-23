@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   app.get('/details', (req, res) => {
     const studentName = req.query.studentName;
     if (!studentName) {
-        res.render('error',{status:400,message:`Student name required`});
+        return res.render('error',{status:400,message:`Student name required`});
     }
     fs.readFile('./student.json','utf-8',(err,data)=>
     {
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
         const details = JSON.parse(data);
         const student = details.find(s => s.name.toLowerCase() === studentName.toLowerCase());
         if (student) {
-            res.render('details',
+            return res.render('details',
             {name:student.name,
              age:student.age,
              grade:student.grade,
@@ -35,11 +35,11 @@ app.get('/', (req, res) => {
             });      
         }
          else {
-            res.render('error',{status:404,message:`Student named ${studentName} Not found`});
+            return res.render('error',{status:404,message:`Student named ${studentName} Not found`});
         }
     }) 
   })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`App listening on port ${port}`)
   })
