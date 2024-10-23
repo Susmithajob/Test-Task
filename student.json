@@ -1,0 +1,14 @@
+[
+    { "name": "John", "age": 16, "grade": 10, "total_marks": 450 },
+    { "name": "Sara", "age": 17, "grade": 11, "total_marks": 470 },
+    { "name": "Mariya", "age": 16, "grade": 10, "total_marks": 480 },
+    { "name": "Mohith", "age": 17, "grade": 11, "total_marks": 490 },
+    { "name": "Meera", "age": 15, "grade": 9, "total_marks": 435 },
+    { "name": "Jeena", "age": 13, "grade": 8, "total_marks": 495 },
+    { "name": "Sarath", "age": 11, "grade": 6, "total_marks": 465 },
+    { "name": "Athira", "age": 14, "grade": 8, "total_marks": 485 },
+    { "name": "Kumar", "age": 15, "grade": 9, "total_marks": 440 },
+    { "name": "Anna", "age": 18, "grade": 12, "total_marks": 500 },
+    { "name": "Lino", "age": 16, "grade": 10, "total_marks": 460 }
+  ]
+  
